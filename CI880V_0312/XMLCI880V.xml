@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<etterem ekod="E01" nev="KV">
+    <cim>
+        <varos>Budapest</varos>
+        <utca>Sas utca</utca>
+        <hsz>12</hsz>
+    </cim>
+    <rendeles id="REN001" vendeg_id="V01">
+        <osszeg>12500</osszeg>
+        <etel>Bécsi szelet burgonyapürével</etel>
+    </rendeles>
+
+    <rendeles id="REN002" vendeg_id="V02">
+        <osszeg>8900</osszeg>
+        <etel>Cézár saláta csirkemellel</etel>
+    </rendeles>
+
+    <foszakacs fkod="F01">
+        <nev>Gordon Ramsey</nev>
+        <eletkor>50</eletkor>
+        <vegzettseg>Magyar konyha</vegzettseg>
+    </foszakacs>
+
+
+    <szakacs szkod="SZ01">
+        <nev>Varga István</nev>
+        <reszleg>R01</reszleg>
+        <vegzettseg>Nemzetközi konyha</vegzettseg>
+    </szakacs>
+
+    <szakacs id="SZ02" recept_nev="Húsleves">
+        <nev>Farkas Gábor</nev>
+    </szakacs>
+
+    <vendeg vkod="V01">
+        <nev>Kovács Péter</nev>
+        <eletkor>30</eletkor>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Sas utca</utca>
+            <hsz>12</hsz>
+        </cim>
+    </vendeg>
+    <gyakornok gykod="GY01">
+        <nev>Szabó Anna</nev>
+        <muszak>
+            13:00 - 21:00
+        </muszak>
+        <muszak>
+            8:00 - 16:00
+        </muszak>
+        <gyakorlat>
+            <kezdete>2023-10-01</kezdete>
+            <vege>2024-01-31</vege>
+        </gyakorlat>
+    </gyakornok>
+
+</etterem>
