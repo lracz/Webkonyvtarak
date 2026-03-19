@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:complexType name="etteremTipus">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="foszakacsTipus">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gyakornokTipus">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="szakacsTipus">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+    <xs:complexType name="vendegTipus">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  
+    <xs:complexType name="rendelesTipus">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:element name="vendeglatas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="etterem" type="etteremTipus" maxOccurs="unbounded"> </xs:element>
+        <xs:element name="foszakacs" type="foszakacsTipus" maxOccurs="unbounded"> </xs:element>
+        <xs:element name="szakacs" type="szakacsTipus" maxOccurs="unbounded"> </xs:element>
+        <xs:element name="gyakornok" type="gyakornokTipus" maxOccurs="unbounded"> </xs:element>
+        <xs:element name="vendeg" type="vendegTipus" maxOccurs="unbounded"> </xs:element>
+        <xs:element name="rendeles" type="rendelesTipus" maxOccurs="unbounded"> </xs:element>
+        
+
+       
+       
+
+      
+       
+      </xs:sequence>
+
+    
+    </xs:complexType>
+    <xs:key name="etterem_kulcs">
+      <xs:selector xpath="etterem"/>
+      <xs:field xpath="@ekod"/>
+    </xs:key>
+     <xs:key name="foszakacs_kulcs">
+      <xs:selector xpath="foszakacs"/>
+      <xs:field xpath="@fkod"/>
+    </xs:key>
+     <xs:key name="szakacs_kulcs">
+      <xs:selector xpath="szakacs"/>
+      <xs:field xpath="@skod"/>
+    </xs:key>
+     <xs:key name="gyakornok_kulcs">
+      <xs:selector xpath="gyakornok"/>
+      <xs:field xpath="@gkod"/>
+    </xs:key>
+     <xs:key name="vendeg_kulcs">
+      <xs:selector xpath="vendeg"/>
+      <xs:field xpath="@vkod"/>
+    </xs:key>
+     <xs:key name="rendeles_kulcs">
+      <xs:selector xpath="rendeles"/>
+      <xs:field xpath="@rkod"/>
+    </xs:key>
+    
+    <xs:keyref name="etterem_idegen_kulcs" refer="etterem_kulcs">
+      <xs:selector xpath="rendeles"/>
+      <xs:field xpath="@e_v_e"/>
+    </xs:keyref>
+      <xs:keyref name="vendeg_idegen_kulcs" refer="vendeg_kulcs">
+      <xs:selector xpath="rendeles"/>
+      <xs:field xpath="@e_v_v"/>
+    </xs:keyref>
+      <xs:keyref name="etterem_foszakacs_idegen_kulcs" refer="etterem_kulcs">
+      <xs:selector xpath="foszakacs"/>
+      <xs:field xpath="@e_f"/>
+    </xs:keyref>
+      <xs:keyref name="etterem_szakacs_idegen_kulcs" refer="etterem_kulcs">
+      <xs:selector xpath="szakacs"/>
+      <xs:field xpath="@e_sz"/>
+    </xs:keyref>
+      <xs:keyref name="etterem_gyakornok_idegen_kulcs" refer="etterem_kulcs">
+      <xs:selector xpath="gyakornok"/>
+      <xs:field xpath="@e_gy"/>
+    </xs:keyref>
+
+    <xs:unique name="unique_foszakacs">
+      <xs:selector xpath="foszakacs"/>
+      <xs:field xpath="@e_f"/>
+    </xs:unique>
+
+  </xs:element>
+
+</xs:schema>
