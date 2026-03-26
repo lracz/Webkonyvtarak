@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XDMCI880V.xsd">
-    <etterem ekod="E01" nev="KV">
+    <etterem ekod="E01">
         <cim>
             <varos>Budapest</varos>
             <utca>Sas utca</utca>
-            <hsz>12</hsz>
+            <hazszam>12</hazszam>
         </cim>
         
         <rendeles id="REN001" vendeg_id="V01">
