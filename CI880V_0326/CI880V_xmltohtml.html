@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órarend - Programtervező Informatikus</title>
+    <style>
+        /* Alapvető beállítások */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        /* Táblázat stílusok */
+        table {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 0.5px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #f1f3f5;
+        }
+
+        /* Egyedi kiegészítések és formázások */
+        .tipus-elmelet {
+            color: #e67e22;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .tipus-gyakorlat {
+            color: #27ae60;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .helyszin-online {
+            color: #2980b9;
+            font-style: italic;
+        }
+        
+        .megjegyzes {
+            color: #c0392b;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Órarend</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Típus</th>
+                <th>Tárgy</th>
+                <th>Nap</th>
+                <th>Időpont</th>
+                <th>Helyszín</th>
+                <th>Oktató</th>
+                <th>Megjegyzés (Kiegészítés)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tipus-elmelet">Elmélet</td>
+                <td>Számításelmélet</td>
+                <td>Hétfő</td>
+                <td>9:00 - 12:00</td>
+                <td class="helyszin-online">Online</td>
+                <td>Dr. Veres Laura</td>
+                <td class="megjegyzes">ASD</td>
+            </tr>
+            <tr>
+                <td class="tipus-gyakorlat">Gyakorlat</td>
+                <td>Komputergrafika és képfeldolgozás</td>
+                <td>Kedd</td>
+                <td>12:00 - 14:00</td>
+                <td class="helyszin-online">Online</td>
+                <td>Dr. Mileff Péter</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipus-gyakorlat">Gyakorlat</td>
+                <td>Alkalmazások Fejlesztése Projekt Labor II.</td>
+                <td>Kedd</td>
+                <td>16:00 - 19:00</td>
+                <td class="helyszin-online">Online</td>
+                <td>Dr. Godó Zoltán Attila</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipus-elmelet">Elmélet</td>
+                <td>Valószínűségszámítás és statisztika</td>
+                <td>Szerda</td>
+                <td>8:00 - 11:00</td>
+                <td>Terem: 116</td>
+                <td>Dr. Kucsinka Katalin</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipus-gyakorlat">Gyakorlat</td>
+                <td>Oktatás és gamifikáció, videojáték - tanulmányok</td>
+                <td>Szerda</td>
+                <td>12:00 - 14:00</td>
+                <td>Terem: Info132</td>
+                <td>Perlaki Attila</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipus-elmelet">Elmélet</td>
+                <td>Fordítóprogramok</td>
+                <td>Szerda</td>
+                <td>17:00 - 19:00</td>
+                <td class="helyszin-online">Online</td>
+                <td>Dr. Túri József</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipus-elmelet">Elmélet</td>
+                <td>Hálózati architektúrák és protokolok</td>
+                <td>Csütörtök</td>
+                <td>9:00 - 11:00</td>
+                <td class="helyszin-online">Online</td>
+                <td>Dr. Mileff Péter</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tipus-gyakorlat">Gyakorlat</td>
+                <td>Webkönyvtárak</td>
+                <td>Csütörtök</td>
+                <td>11:00 - 13:00</td>
+                <td>Terem: Info124</td>
+                <td>Dr. Bednarik László</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
