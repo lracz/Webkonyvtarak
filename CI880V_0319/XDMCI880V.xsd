@@ -15,6 +15,7 @@
       <xs:element name="eletkor" type="xs:integer" />
       <xs:element name="cim" type="cimTipus" />
     </xs:sequence>
+    <xs:attribute name="vkod" type="xs:string" use="required" />
   </xs:complexType>
   
   <xs:complexType name="cimTipus">
@@ -67,6 +68,7 @@
       <xs:element name="osszeg" type="xs:integer" />
       <xs:element name="etel" type="xs:string" />
     </xs:sequence>
+    <xs:attribute name="rkod" type="xs:string" use="required" />
     <xs:attribute name="e_v_e" type="xs:string" use="required" />
     <xs:attribute name="e_v_v" type="xs:string" use="required" />
   </xs:complexType>

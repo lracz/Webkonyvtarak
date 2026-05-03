@@ -1,0 +1,50 @@
+CI880V Órarend 2026 tavasz
+
+Tárgy: Számításelmélet
+Időpont: Hétfő 9:00 - 12:00
+Helyszín: Online
+Oktató: Dr. Veres Laura
+Szak: Programtervező Informatikus
+
+Tárgy: Komputergrafika és képfeldolgozás
+Időpont: Kedd 12:00 - 14:00
+Helyszín: Online
+Oktató: Dr. Mileff Péter
+Szak: Programtervező Informatikus
+
+Tárgy: Alkalmazások Fejlesztése Projekt Labor II.
+Időpont: Kedd 16:00 - 19:00
+Helyszín: Online
+Oktató: Dr. Godó Zoltán Attila
+Szak: Programtervező Informatikus
+
+Tárgy: Valószínűségszámítás és statisztika
+Időpont: Szerda 8:00 - 11:00
+Helyszín: Terem: 116
+Oktató: Dr. Kucsinka Katalin
+Szak: Programtervező Informatikus
+
+Tárgy: Oktatás és gamifikáció, videojáték - tanulmányok
+Időpont: Szerda 12:00 - 14:00
+Helyszín: Terem: Info132
+Oktató: Perlaki Attila
+Szak: Programtervező Informatikus
+
+Tárgy: Fordítóprogramok
+Időpont: Szerda 17:00 - 19:00
+Helyszín: Online
+Oktató: Dr. Túri József
+Szak: Programtervező Informatikus
+
+Tárgy: Hálózati architektúrák és protokolok
+Időpont: Csütörtök 9:00 - 11:00
+Helyszín: Online
+Oktató: Dr. Mileff Péter
+Szak: Programtervező Informatikus
+
+Tárgy: Webkönyvtárak
+Időpont: Csütörtök 11:00 - 13:00
+Helyszín: Terem: Info124
+Oktató: Dr. Bednarik László
+Szak: Programtervező Informatikus
+

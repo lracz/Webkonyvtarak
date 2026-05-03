@@ -1,0 +1,109 @@
+{
+  "@elemementFormDefault": "qualified",
+  "ora": [
+    {
+      "@id": "01",
+      "@tipus": "elmelet",
+      "targy": "Számításelmélet",
+      "idopont": {
+        "nap": "Hétfő",
+        "tol": "9",
+        "ig": "12"
+      },
+      "helyszin": "Online",
+      "oktato": "Dr. Veres Laura",
+      "szak": "Programtervező Informatikus"
+    },
+    {
+      "@id": "02",
+      "@tipus": "gyakorlat",
+      "targy": "Komputergrafika és képfeldolgozás",
+      "idopont": {
+        "nap": "Kedd",
+        "tol": "12",
+        "ig": "14"
+      },
+      "helyszin": "Online",
+      "oktato": "Dr. Mileff Péter",
+      "szak": "Programtervező Informatikus"
+    },
+    {
+      "@id": "03",
+      "@tipus": "gyakorlat",
+      "targy": "Alkalmazások Fejlesztése Projekt Labor II.",
+      "idopont": {
+        "nap": "Kedd",
+        "tol": "16",
+        "ig": "19"
+      },
+      "helyszin": "Online",
+      "oktato": "Dr. Godó Zoltán Attila",
+      "szak": "Programtervező Informatikus"
+    },
+    {
+      "@id": "04",
+      "@tipus": "elmelet",
+      "targy": "Valószínűségszámítás és statisztika",
+      "idopont": {
+        "nap": "Szerda",
+        "tol": "8",
+        "ig": "11"
+      },
+      "helyszin": "Terem: 116",
+      "oktato": "Dr. Kucsinka Katalin",
+      "szak": "Programtervező Informatikus"
+    },
+    {
+      "@id": "05",
+      "@tipus": "gyakorlat",
+      "targy": "Oktatás és gamifikáció, videojáték - tanulmányok",
+      "idopont": {
+        "nap": "Szerda",
+        "tol": "12",
+        "ig": "14"
+      },
+      "helyszin": "Terem: Info132",
+      "oktato": "Perlaki Attila",
+      "szak": "Programtervező Informatikus"
+    },
+    {
+      "@id": "06",
+      "@tipus": "elmelet",
+      "targy": "Fordítóprogramok",
+      "idopont": {
+        "nap": "Szerda",
+        "tol": "17",
+        "ig": "19"
+      },
+      "helyszin": "Online",
+      "oktato": "Dr. Túri József",
+      "szak": "Programtervező Informatikus"
+    },
+    {
+      "@id": "07",
+      "@tipus": "elmelet",
+      "targy": "Hálózati architektúrák és protokolok",
+      "idopont": {
+        "nap": "Csütörtök",
+        "tol": "9",
+        "ig": "11"
+      },
+      "helyszin": "Online",
+      "oktato": "Dr. Mileff Péter",
+      "szak": "Programtervező Informatikus"
+    },
+    {
+      "@id": "08",
+      "@tipus": "gyakorlat",
+      "targy": "Webkönyvtárak",
+      "idopont": {
+        "nap": "Csütörtök",
+        "tol": "11",
+        "ig": "13"
+      },
+      "helyszin": "Terem: Info124",
+      "oktato": "Dr. Bednarik László",
+      "szak": "Programtervező Informatikus"
+    }
+  ]
+}

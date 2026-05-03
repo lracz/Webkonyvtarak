@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órarend Feldolgozás</title>
+    <style>
+
+        body { font-family: Arial, sans-serif; margin: 30px; background-color: #f4f4f9; }
+        .ora-blokk {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .mezo { font-weight: bold; color: #333; }
+    </style>
+</head>
+<body>
+
+<h2>CI880V Órarend 2026 tavasz (JavaScriptből)</h2>
+
+<div id="orarend-container"></div>
+
+<script>
+    fetch('orarendCI880V.json')
+        .then(response => {
+
+            if (!response.ok) {
+                throw new Error('Hálózat vagy fájlelérési hiba!');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const container = document.getElementById('orarend-container');
+            const orarend = data.ora;
+
+            orarend.forEach(ora => {
+                const div = document.createElement('div');
+                div.className = 'ora-blokk';
+                const time = ora.idopont;
+
+                const tartalom = `
+                        <span class="mezo">Azonosító (@id):</span> ${ora['@id']} <br>
+                        <span class="mezo">Típus (@tipus):</span> ${ora['@tipus']} <br>
+                        <span class="mezo">Tárgy:</span> ${ora.targy} <br>
+                        <span class="mezo">Időpont:</span> ${time.nap} ${time.tol}:00 - ${time.ig}:00 <br>
+                        <span class="mezo">Helyszín:</span> ${ora.helyszin} <br>
+                        <span class="mezo">Oktató:</span> ${ora.oktato} <br>
+                        <span class="mezo">Szak:</span> ${ora.szak}
+                    `;
+                div.innerHTML = tartalom;
+                container.appendChild(div);
+            });
+        })
+        .catch(error => {
+            console.error('Hiba a feldolgozás során:', error);
+            document.getElementById('orarend-container').innerHTML =
+                '<p style="color:red; font-weight:bold;">Hiba történt! Kérlek olvasd el a CORS szabályokra vonatkozó futtatási tippet!</p>';
+        });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CI880V_Vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespacesSchemaLocation="XDMCI880V.xsd">
+            
+    <Etterem id="E01">
+                    
+        <Nev>Finm Étterem</Nev>
+                    
+        <Cim>
+                            
+            <Varos>Sátoraljaújhely</Varos>
+                            
+            <Utca>Fő utca</Utca>
+                            
+            <Hazszam>5</Hazszam>
+                        
+        </Cim>
+                    
+        <Csillag>5/5</Csillag>
+                    
+        <Foszakacs id="F01">
+                            
+            <Nev>Nagy Péter</Nev>
+                            
+            <Eletkor>45</Eletkor>
+                            
+            <Vegzettseg>Szakács</Vegzettseg>
+                        
+        </Foszakacs>
+                    
+        <Szakacs id="SZ01">
+                            
+            <Nev>Kis János</Nev>
+                            
+            <Reszleg>Konyha</Reszleg>
+                            
+            <Vegzettseg>Szakács</Vegzettseg>
+                        
+        </Szakacs>
+                    
+        <Gyakornok id="GY01">
+                            
+            <Nev>Magyar Péter</Nev>
+                                
+            <Gyakorlat>
+                                        
+                <Kezdete>2026.03.26</Kezdete>
+                                        
+                <Idotartam>12 hónap</Idotartam>
+                                    
+            </Gyakorlat>
+                                
+            <Muszak>Délután</Muszak>
+                        
+        </Gyakornok>
+                
+        <Szakacs id="sz002">
+            <Nev>Teszt Szakács CI880V</Nev>
+        </Szakacs>
+    </Etterem>
+            
+    <Vendeg id="V01">
+                    
+        <Nev>Nagy Anna</Nev>
+                    
+        <Cim>
+                            
+            <Varos>Sátoraljaújhely</Varos>
+                            
+            <Utca>Eötvös utca</Utca>
+                            
+            <Hazszam>5</Hazszam>
+                        
+        </Cim>
+                    
+        <Eletkor>55</Eletkor>
+                
+    </Vendeg>
+            
+    <Rendeles>
+                    
+        <EtteremRef>E01</EtteremRef>
+                    
+        <VendegRef>V01</VendegRef>
+                    
+        <Etel>Hanburger</Etel>
+                    
+        <Osszeg>2300Ft</Osszeg>
+                
+    </Rendeles>
+    
+</CI880V_Vendeglatas>

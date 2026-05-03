@@ -1,0 +1,91 @@
+<CI880V_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    elemementFormDefault="qualified">
+    <ora id="01" tipus="elmelet">
+        <targy>Számításelmélet</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>9</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>Online</helyszin>
+        <oktato>Dr. Veres Laura</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+    <ora id="02" tipus="gyakorlat">
+        <targy>Komputergrafika és képfeldolgozás</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>Online</helyszin>
+        <oktato>Dr. Mileff Péter</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+    <ora id="03" tipus="gyakorlat">
+        <targy>Alkalmazások Fejlesztése Projekt Labor II.</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>16</tol>
+            <ig>19</ig>
+        </idopont>
+        <helyszin>Online</helyszin>
+        <oktato>Dr. Godó Zoltán Attila</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+    <ora id="04" tipus="elmelet">
+        <targy>Valószínűségszámítás és statisztika</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>8</tol>
+            <ig>11</ig>
+        </idopont>
+        <helyszin>Terem: 116</helyszin>
+        <oktato>Dr. Kucsinka Katalin</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+    <ora id="05" tipus="gyakorlat">
+        <targy>Oktatás és gamifikáció, videojáték - tanulmányok</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>Terem: Info132</helyszin>
+        <oktato>Perlaki Attila</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+    <ora id="06" tipus="elmelet">
+        <targy>Fordítóprogramok</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>17</tol>
+            <ig>19</ig>
+        </idopont>
+        <helyszin>Online</helyszin>
+        <oktato>Dr. Túri József</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+    <ora id="07" tipus="elmelet">
+        <targy>Hálózati architektúrák és protokolok</targy>
+        <idopont>
+            <nap>Csütörtök</nap>
+            <tol>9</tol>
+            <ig>11</ig>
+        </idopont>
+        <helyszin>Online</helyszin>
+        <oktato>Dr. Mileff Péter</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+    <ora id="08" tipus="gyakorlat">
+        <targy>Webkönyvtárak</targy>
+        <idopont>
+            <nap>Csütörtök</nap>
+            <tol>11</tol>
+            <ig>13</ig>
+        </idopont>
+        <helyszin>Terem: Info124</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+</CI880V_orarend>

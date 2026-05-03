@@ -7,17 +7,14 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.xml.sax.SAXException;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 public class DOMRead {
-
     public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException {
-
 
         File xmlFile = new File("XMLCI880V.xml");
 
@@ -29,11 +26,10 @@ public class DOMRead {
         System.out.println("Root element: " + doc.getDocumentElement().getNodeName());
         System.out.println("----------------------------");
 
+        NodeList etteremList = doc.getElementsByTagName("Etterem");
 
-        NodeList nList = doc.getElementsByTagName("Etterem");
-
-        for (int i = 0; i < nList.getLength(); i++) {
-            Node nNode = nList.item(i);
+        for (int i = 0; i < etteremList.getLength(); i++) {
+            Node nNode = etteremList.item(i);
             System.out.println("\nCurrent element: " + nNode.getNodeName());
 
             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
@@ -41,16 +37,21 @@ public class DOMRead {
 
                 String id = elem.getAttribute("id");
 
+
                 Node node1 = elem.getElementsByTagName("Nev").item(0);
                 String nev = node1.getTextContent();
 
-                Node node2 = elem.getElementsByTagName("Varos").item(0);
+
+                Node cimNode = elem.getElementsByTagName("Cim").item(0);
+                Element cimElem = (Element) cimNode;
+
+                Node node2 = cimElem.getElementsByTagName("Varos").item(0);
                 String city = node2.getTextContent();
 
-                Node node3 = elem.getElementsByTagName("Utca").item(0);
+                Node node3 = cimElem.getElementsByTagName("Utca").item(0);
                 String street = node3.getTextContent();
 
-                Node node4 = elem.getElementsByTagName("Hazszam").item(0);
+                Node node4 = cimElem.getElementsByTagName("Hazszam").item(0);
                 String number = node4.getTextContent();
 
                 Node node5 = elem.getElementsByTagName("Csillag").item(0);
@@ -64,47 +65,58 @@ public class DOMRead {
                 System.out.println("Csillag: " + stars);
             }
         }
-        for (int i = 0; i < nList.getLength(); i++) {
-            Node nNode = nList.item(i);
+
+
+        NodeList foszakacsList = doc.getElementsByTagName("Foszakacs");
+
+        for (int i = 0; i < foszakacsList.getLength(); i++) {
+            Node nNode = foszakacsList.item(i);
 
             System.out.println("\nCurrent element: " + nNode.getNodeName());
 
             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                 Element elem = (Element) nNode;
 
-                String id = elem.getAttribute("fkod");
-                String eid = elem.getAttribute("e_f");
+                String fkod = elem.getAttribute("id");
 
-                String work = "Ez a főszakacs dolgozik az " + eid + " étteremben.";
+                String etteremId = findParentEtteremId(elem);
 
-                Node node1 = elem.getElementsByTagName("nev").item(0);
+                String work = "Ez a főszakács dolgozik az " + etteremId + " étteremben.";
+
+                Node node1 = elem.getElementsByTagName("Nev").item(0);
                 String name = node1.getTextContent();
 
-                Node node2 = elem.getElementsByTagName("eletkor").item(0);
+                Node node2 = elem.getElementsByTagName("Eletkor").item(0);
                 String age = node2.getTextContent();
 
-                Node node3;
                 String edu = "";
-                for (int j = 0; j < elem.getElementsByTagName("vegzettseg").getLength(); j++) {
-                    node3 = elem.getElementsByTagName("vegzettseg").item(j);
-                    if (j == elem.getElementsByTagName("vegzettseg").getLength() - 1) {
-                        edu += node3.getTextContent();
-                    } else {
-                        edu += node3.getTextContent() + ", ";
+                NodeList vegzettsegList = elem.getElementsByTagName("Vegzettseg");
+                for (int j = 0; j < vegzettsegList.getLength(); j++) {
+                    Node node3 = vegzettsegList.item(j);
+                    edu += node3.getTextContent();
+                    if (j < vegzettsegList.getLength() - 1) {
+                        edu += ", ";
                     }
                 }
-                System.out.println("Főszakács ID: "+ id);
+
+                System.out.println("Főszakács ID: " + fkod);
                 System.out.println("Nev: " + name);
                 System.out.println("Eletkor: " + age);
                 System.out.println("Végzettségek: " + edu);
                 System.out.println(work);
-
             }
-
         }
+    }
 
-
-
-        nList = doc.getElementsByTagName("Foszakacs");
+    private static String findParentEtteremId(Node foszakacsNode) {
+        Node parent = foszakacsNode.getParentNode();
+        while (parent != null) {
+            if (parent.getNodeType() == Node.ELEMENT_NODE && parent.getNodeName().equals("Etterem")) {
+                Element e = (Element) parent;
+                return e.getAttribute("id");
+            }
+            parent = parent.getParentNode();
+        }
+        return "?";
     }
 }

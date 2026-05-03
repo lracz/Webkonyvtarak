@@ -1,67 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XDMCI880V.xsd">
     <etterem ekod="E01">
+        <nev>Gourmet Palota</nev>
         <cim>
             <varos>Budapest</varos>
             <utca>Sas utca</utca>
             <hazszam>12</hazszam>
         </cim>
-        
-        <rendeles id="REN001" vendeg_id="V01">
-            <osszeg>12500</osszeg>
-            <etel>Bécsi szelet burgonyapürével</etel>
-        </rendeles>
-
-        <rendeles id="REN002" vendeg_id="V02">
-            <osszeg>8900</osszeg>
-            <etel>Cézár saláta csirkemellel</etel>
-        </rendeles>
-
-        <foszakacs fkod="F01">
-            <nev>Gordon Ramsey</nev>
-            <eletkor>50</eletkor>
-            <vegzettseg>Magyar konyha</vegzettseg>
-        </foszakacs>
-
-        <szakacs szkod="SZ01">
-            <nev>Varga István</nev>
-            <reszleg>R01</reszleg>
-            <vegzettseg>Nemzetközi konyha</vegzettseg>
-        </szakacs>
-
-        <szakacs szkod="SZ02">
-            <nev>Farkas Gábor</nev>
-            <reszleg>R01</reszleg>
-            <recept_nev>Húsleves</recept_nev>
-        </szakacs>
-
-        <gyakornok gykod="GY01">
-            <nev>Szabó Anna</nev>
-            <muszak>13:00 - 21:00</muszak>
-            <gyakorlat>
-                <kezdete>2023-10-01</kezdete>
-                <vege>2024-01-31</vege>
-            </gyakorlat>
-        </gyakornok>
-
-        <vendeg vkod="V01">
-            <nev>Kovács Péter</nev>
-            <eletkor>30</eletkor>
-            <cim>
-                <varos>Budapest</varos>
-                <utca>Sas utca</utca>
-                <hsz>12</hsz>
-            </cim>
-        </vendeg>
-
-        <vendeg vkod="V02">
-            <nev>Nagy János</nev>
-            <eletkor>28</eletkor>
-            <cim>
-                <varos>Budapest</varos>
-                <utca>Andrássy út</utca>
-                <hsz>50</hsz>
-            </cim>
-        </vendeg>
+        <csillag>5</csillag>
     </etterem>
+
+    <foszakacs fkod="F01" e_f="E01">
+        <nev>Gordon Ramsey</nev>
+        <eletkor>50</eletkor>
+        <vegzettseg>Magyar konyha</vegzettseg>
+    </foszakacs>
+
+    <szakacs skod="SZ01" e_sz="E01">
+        <nev>Varga István</nev>
+        <reszleg>R01</reszleg>
+        <vegzettseg>Nemzetközi konyha</vegzettseg>
+    </szakacs>
+
+    <szakacs skod="SZ02" e_sz="E01">
+        <nev>Farkas Gábor</nev>
+        <reszleg>R01</reszleg>
+        <vegzettseg>Magyar konyha</vegzettseg>
+    </szakacs>
+
+    <gyakornok gkod="GY01" e_gy="E01">
+        <nev>Szabó Anna</nev>
+        <gyakorlat>
+            <kezdete>2023-10-01</kezdete>
+            <idotartama>4 hónap</idotartama>
+        </gyakorlat>
+        <muszak>13:00 - 21:00</muszak>
+    </gyakornok>
+
+    <vendeg vkod="V01">
+        <nev>Kovács Péter</nev>
+        <eletkor>30</eletkor>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Sas utca</utca>
+            <hazszam>12</hazszam>
+        </cim>
+    </vendeg>
+
+    <vendeg vkod="V02">
+        <nev>Nagy János</nev>
+        <eletkor>28</eletkor>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Andrássy út</utca>
+            <hazszam>50</hazszam>
+        </cim>
+    </vendeg>
+
+    <rendeles rkod="REN001" e_v_e="E01" e_v_v="V01">
+        <osszeg>12500</osszeg>
+        <etel>Bécsi szelet burgonyapürével</etel>
+    </rendeles>
+
+    <rendeles rkod="REN002" e_v_e="E01" e_v_v="V02">
+        <osszeg>8900</osszeg>
+        <etel>Cézár saláta csirkemellel</etel>
+    </rendeles>
 </vendeglatas>

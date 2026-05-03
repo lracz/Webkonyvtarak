@@ -3,7 +3,7 @@
 <!--<!DOCTYPE orarend SYSTEM "orarend.dtd">-->
 
 
-<CI880V_orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<CI880V_orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" elementFormDefault="qualified">
     <!-- Hétfő -->
     <ora id="1" tipus="Elmélet">
         <kurzus>Számításelmélet</kurzus>
@@ -17,7 +17,6 @@
         <szak>Programtervező informatikus</szak>
     </ora>
 
-    <!-- Kedd -->
     <ora id="2" tipus="Elmélet">
         <kurzus>Komputergrafika és képfeldolgozás</kurzus>
         <idopont>
@@ -42,7 +41,6 @@
         <szak>Programtervező informatikus</szak>
     </ora>
 
-    <!-- Szerda -->
     <ora id="4" tipus="Elmélet">
         <kurzus>Valószínűségszámítás és statisztika</kurzus>
         <idopont>
